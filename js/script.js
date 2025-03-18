@@ -1,7 +1,16 @@
 // Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
+$('.navbar-collapse ul li a')。click(function() {
     $('.navbar-toggle:visible').click();
 })
+
+console.log('     ██╗██╗███╗   ██╗ ██████╗ ███████╗██╗  ██╗██╗   ██╗██╗   ██╗███████╗\n' +
+        '     ██║██║████╗  ██║██╔════╝ ╚══███╔╝██║  ██║██║   ██║╚██╗ ██╔╝██╔════╝\n' +
+        '     ██║██║██╔██╗ ██║██║  ███╗  ███╔╝ ███████║██║   ██║ ╚████╔╝ █████╗  \n' +
+        '██   ██║██║██║╚██╗██║██║   ██║ ███╔╝  ██╔══██║██║   ██║  ╚██╔╝  ██╔══╝  \n' +
+        '╚█████╔╝██║██║ ╚████║╚██████╔╝███████╗██║  ██║╚██████╔╝   ██║   ███████╗\n' +
+        ' ╚════╝ ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝ ╚═════╝    ╚═╝   ╚══════╝\n' +
+        'By JessDaodao\n' +
+        '网站基于模板二次创作，已在GitHub开源：https://github.com/JessDaodao/jingzhuye-web');
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
@@ -15,7 +24,7 @@ $(function() {
 });
 
 // Initialize and Configure Magnific Popup Lightbox Plugin
-$('.popup-gallery').magnificPopup({
+$('.popup-gallery')。magnificPopup({
     delegate: '.gallery',
     type: 'image',
     tLoading: 'Loading image #%curr%...',
