@@ -1216,3 +1216,41 @@ img{
     position: absolute;
     content: "";
 }
+
+.vertical-columns {
+	column-count: 4;
+	column-gap: 15px;
+	break-inside: avoid;
+  }
+  
+.sol {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 15px;
+	break-inside: avoid;
+  }
+  
+.popup-gallery .col-md-2 {
+	width: auto;
+	float: none;
+	padding: 0;
+  }
+  
+@media (max-width: 1200px) {
+	.vertical-columns {
+	  column-count: 3;
+	}
+  }
+  
+@media (max-width: 768px) {
+	.vertical-columns {
+	  column-count: 2;
+	}
+  }
+  
+@media (max-width: 480px) {
+	.vertical-columns {
+	  column-count: 1;
+	}
+  }
+
