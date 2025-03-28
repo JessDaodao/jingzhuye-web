@@ -19,9 +19,22 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const parallaxBg = document.querySelector('.parallax-bg');
+        let scrollPosition = 0;
+      
+        window.addEventListener('scroll', function() {
+          scrollPosition = window.pageYOffset;
+          parallaxBg.style.transform = `translate3d(0, ${scrollPosition * -0.1}px, 0)`;
+        });
+        
+        parallaxBg.style.transform = `translate3d(0, ${window.pageYOffset * -0.1}px, 0)`;
+      });
+      </script>
 </head>
 <body>
-
+  <div class="parallax-bg"></div>
 <!-- Navigation Bar -->
    <nav class="navbar navbar-fixed-top navbar-default">
      <div class="container">
@@ -55,8 +68,9 @@
    <div id="about">
 
     <br>
-    <h1 align="center"><strong>这里还没写完</strong></h1>
-    <h4 align="center">：（</h4>
+    <h1 align="center"><strong>介绍</strong></h1>
+    <h4 align="center">你好这里是荆竹野，叫竹子ok～<br>
+      约稿可走米画师、画加、b站工坊，其它社交平台有b站、小红书、DA、抖音、p站，除此外无账号，全平台同名，谢谢大家的支持和喜欢～</h4>
     <br>
 
 

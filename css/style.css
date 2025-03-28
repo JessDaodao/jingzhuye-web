@@ -116,6 +116,7 @@ footer{
 @media(min-width: 768px){
 	.home-page .container .nav li{
 		text-align: left;
+		text-shadow: #000000 1px 0 10px
 	}
 	.home-page .list-inline{
 		text-align: right;
@@ -1254,3 +1255,26 @@ img{
 	}
   }
 
+  .parallax-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 200%;
+	z-index: -1;
+	background-image: url(../images/bg.png);
+	background-size: cover;
+	background-position: center;
+	transform: translateZ(0);
+	will-change: transform;
+  }
+  
+  #index, #about {
+	position: relative;
+	background: rgba(241, 241, 241, 0.541);
+  }
+  
+  body {
+	font-family: "Raleway", sans-serif;
+	padding-top: 70px;
+  }
